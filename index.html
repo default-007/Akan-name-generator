@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/master.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" href="js/scripts.js">
 
+    </script>
   </head>
 
   <body>
@@ -62,7 +63,7 @@
         <div class="col-sm-4">
           <h2 class="h2"><strong>Input Details</strong></h2>
           <div class="form-group">
-            <form class="form" action="/action_page.php">
+            <form class="form" action="#">
               <label for="year" class="mr-sm-2">Year of Birth:</label>
               <input type="number" class="form-control mb-2 mr-sm-2" placeholder="Enter Year of Birth" id="year" min="1930" max="2020" required>
               <label for="month" class="mr-sm-2">Month of Birth:</label>
@@ -84,7 +85,7 @@
           </div>
           <br>
           <br>
-          <button type="submit" class="btn btn-primary mb-2" onclick="getName()">Submit</button>
+          <button type="submit" class="btn btn-primary mb-2" onclick="calculateWeek()">Submit</button>
 
         </div>
       </div>
