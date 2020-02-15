@@ -1,0 +1,7 @@
+.fakeimg {
+  height: 200px;
+  background: url(../images/akannames.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
