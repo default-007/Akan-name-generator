@@ -9,3 +9,20 @@
   background-color: brown;
   color: White;
 }
+span {
+  color: orange;
+h1 {
+  font-weight: 400;
+  font-size: 80px;
+}
+#akan {
+  font-weight: 400px;
+}
+.par {
+  color: black;
+  font-size: 40px;
+}
+h2 {
+  color: orange;
+  background-color: brown;
+}
