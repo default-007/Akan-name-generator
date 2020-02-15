@@ -1,5 +1,5 @@
 .fakeimg {
-  height: 200px;
+  height: 180px;
   background: url(../images/akannames.jpeg);
   background-size: cover;
   background-position: center;
@@ -11,18 +11,27 @@
 }
 span {
   color: orange;
-h1 {
-  font-weight: 400;
-  font-size: 80px;
 }
-#akan {
-  font-weight: 400px;
+
+h1 {
+  font-size: 60px;
+}
+span, #akan {
+  font-size: 60px;
+  font-weight: bolder;
 }
 .par {
   color: black;
   font-size: 40px;
 }
-h2 {
-  color: orange;
-  background-color: brown;
+.h2 {
+  color: brown;
+
+}
+h4 {
+  color: brown;
+  font-weight: bold;
+}
+ul {
+  font-weight: bold;
 }
