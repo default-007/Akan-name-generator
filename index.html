@@ -61,6 +61,28 @@
         </div>
         <div class="col-sm-4">
           <h2>Input Details</h2>
+          <div class="form-group">
+            <form class="form" action="/action_page.php">
+              <label for="year" class="mr-sm-2">Year of Birth:</label>
+              <input type="number" class="form-control mb-2 mr-sm-2" placeholder="Enter Year of Birth" id="year" min="1930" max="2020" required>
+              <label for="month" class="mr-sm-2">Month of Birth:</label>
+              <input type="number" class="form-control mb-2 mr-sm-2" placeholder="Enter Month of Birth" id="month" min="1" max="12" required>
+              <label for="day" class="mr-sm-2">Date of Birth:</label>
+              <input type="number" class="form-control mb-2 mr-sm-2" placeholder="Enter Date of Birth" id="day" name="day" min="1" max="31" required>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+          <div class="form-check mb-2 mr-sm-2">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="male">Male
+            </label>
+            <br>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="female">Female
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary mb-2" onclick="getName()">Submit</button>
+
         </div>
       </div>
     </div>
