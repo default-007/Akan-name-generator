@@ -32,6 +32,4 @@ if dayofWeek (day === 0) {
   alert("Your Akan Name is; " + maleAkanNames[dayofWeek] + " born on " + daysofWeek[dayofWeek])
 } else(gender === "female") {
   alert("Your Akan Name is; " + femaleAkanNames[dayofWeek] + " born on " + daysofWeek[dayofWeek])
-  }
-  return false;
-  }
+};
