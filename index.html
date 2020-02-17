@@ -5,8 +5,13 @@
     <title>Akan Name Generator</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/master.css">
+    <script src="js/bootstrap.js">
+    </script>
+    <script src="js/scripts.js">
+
+    </script>
 
   </head>
 
@@ -28,7 +33,9 @@
               day of the week they were born and the order in which they were born.
               These "day names" have further meanings concerning the soul and character
               of the person. Middle names have considerably more variety and can refer
-              to their birth order, twin status, or an ancestor's middle name.</p>
+              to their birth order, twin status, or an ancestor's middle name.
+              Frequently in Ghana, children are given their first name as a 'day name'
+              which corresponds to the day in the week they were born.</p>
 
             <div class="row ghanaian-names">
               <div class="col-md-6">
@@ -61,24 +68,22 @@
         <div class="col-sm-4">
           <h2 class="h2"><strong>Input Details</strong></h2>
           <div class="form-group">
-            <form class="form" onsubmit="akanG()">
+            <form class="form" onsubmit="getAkanName()">
               <label for="date" class="input-group">Date of Birth:</label>
-              <input type="text" class="form-control mb-2 mr-sm-2" placeholder="mm/dd/yyyy" id="myBirthDate" name="date" required>
-              <div class="valid-feedback">Valid.</div>
-              <div class="invalid-feedback">Please fill out this field.</div>
+              <input type="date" class="form-control mb-2 mr-sm-2" placeholder="mm/dd/yyyy" id="myBirthDate" name="date" autocomplete="off" required>
           </div>
           <label class="label">Gender</label>
-          <div class="rdio rdio-default fs11">
+          <div class="rdio rdio-default">
             <input type="radio" name="gender" id="male" value="Male">
             <label for="male">Male</label>
           </div>
-          <div class="rdio rdio-default fs11">
+          <div class="rdio rdio-default">
             <input type="radio" name="gender" value="Female" id="female">
             <label for="female">Female</label>
           </div>
           <br>
           <br>
-          <button type="submit" class="btn btn-primary mb-2" onclick="getAkanName()">Submit</button>
+          <button type="submit" class="btn btn-primary mb-2" onsubmit="getAkanName()">Submit</button>
           <div class="output">
             <p id="message"></p>
           </div>

@@ -5,7 +5,7 @@ function getAkanName(){
   //Collect data from html
   var gender = document.getElementsByName("gender").value;
   var myBirthday = document.getElementById("myBirthDate").value;
-  var dateOfBirth = new Date(myBirthday);
+  var dateOfBirth = new date (myBirthday);
   var dayOfTheWeek = dateOfBirth.getDay();
 
   if (myBirthday === ""){
