@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/master.css">
-    <script type="text/javascript" src="js/scripts.js">
 
-    </script>
   </head>
 
   <body>
@@ -63,29 +61,27 @@
         <div class="col-sm-4">
           <h2 class="h2"><strong>Input Details</strong></h2>
           <div class="form-group">
-            <form class="form" action="#">
-              <label for="year" class="mr-sm-2">Year of Birth:</label>
-              <input type="number" class="form-control mb-2 mr-sm-2" placeholder="Enter Year of Birth" id="year" min="1930" max="2020" required>
-              <label for="month" class="mr-sm-2">Month of Birth:</label>
-              <input type="number" class="form-control mb-2 mr-sm-2" placeholder="Enter Month of Birth" id="month" min="1" max="12" required>
-              <label for="day" class="mr-sm-2">Date of Birth:</label>
-              <input type="number" class="form-control mb-2 mr-sm-2" placeholder="Enter Date of Birth" id="day" name="day" min="1" max="31" required>
+            <form class="form" onsubmit="akanG()">
+              <label for="date" class="input-group">Date of Birth:</label>
+              <input type="text" class="form-control mb-2 mr-sm-2" placeholder="mm/dd/yyyy" id="myBirthDate" name="date" required>
               <div class="valid-feedback">Valid.</div>
               <div class="invalid-feedback">Please fill out this field.</div>
           </div>
-          <div class="form-check-inline">
-            <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="male">Male
-            </label>
+          <label class="label">Gender</label>
+          <div class="rdio rdio-default fs11">
+            <input type="radio" name="gender" id="male" value="Male">
+            <label for="male">Male</label>
           </div>
-          <div class="form-check-inline">
-            <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="female">Female
-            </label>
+          <div class="rdio rdio-default fs11">
+            <input type="radio" name="gender" value="Female" id="female">
+            <label for="female">Female</label>
           </div>
           <br>
           <br>
-          <button type="button" class="btn btn-primary mb-2" onclick="akan()">Submit</button>
+          <button type="submit" class="btn btn-primary mb-2" onclick="getAkanName()">Submit</button>
+          <div class="output">
+            <p id="message"></p>
+          </div>
 
         </div>
       </div>
@@ -95,10 +91,10 @@
     <div class="jumbotron text-center" style="margin-bottom:0">
       <p>Site created by default-007</p>
     </div>
+    <script type="text/javascript" src="js/bootstrap.js">
 
+    </script>
+    <script type="text/jscript" src="js/scripts.js"></script>
   </body>
-  <script type="text/jscript" href="js/scripts.js">
-
-  </script>
 
 </html>
