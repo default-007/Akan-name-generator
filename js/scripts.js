@@ -10,10 +10,10 @@
   var yy = parseInt(year%100);
   var cc = parseInt(year/100);
 
-function calculateWeek(){
-  var dayofWeek =  ( ( (cc/4) -(2*cc)-1) + ((5*yy)/4) + ((26*(month+1)/10)) + day) % 7;
+var dayofWeek =function calculateWeek(month, year, day){
+    return ( ( (cc/4) -(2*cc)-1) + ((5*yy)/4) + ((26*(month+1)/10)) + day) % 7;
 ]
-if day (day === 0) {
+if dayofWeek (day === 0) {
   return "Sunday";
 } else if (day === 1) {
   return "Monday";
