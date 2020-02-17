@@ -12,19 +12,19 @@ The webpage can be viewed though the following browsers.
 * Safari
 The repository can also be cloned and the webpage viewed locally.
 ## Behaviour Driven Development
-* Displays Form For Entering Date and Gender
-	..INPUT: "User's Birthdate Entered"
-	..INPUT: "User's Gender Entered"
-	OUTPUT: "Displays User's Akan Name According to Submitted Date and Gender"
-* Displays an Error Message if Date Input Left Blank
-	..INPUT: ""
-	..OUTPUT: "Displays Error Message"
-* Displays an Error Message if Gender Not Chosen
-	..INPUT: ""
-	..OUTPUT: "Display an Error Message"
-* Clear the text fields
-	..INPUT: "reload page CTRL+R"
-	..OUTPUT: "Page reloads"
+* 1.Displays Form For Entering Date and Gender
+	..*INPUT: "User's Birthdate Entered"
+	..*INPUT: "User's Gender Entered"
+	..*OUTPUT: "Displays User's Akan Name According to Submitted Date and Gender"
+* 2.Displays an Error Message if Date Input Left Blank
+	..*INPUT: ""
+	..*OUTPUT: "Displays Error Message"
+* 3.Displays an Error Message if Gender Not Chosen
+	..*INPUT: ""
+	..*OUTPUT: "Display an Error Message"
+* 4.Clear the text fields
+	..*INPUT: "reload page CTRL+R"
+	..*OUTPUT: "Page reloads"
 ## Known Bugs
 There are currently no known bugs
 ## Technologies Used
