@@ -6,8 +6,8 @@ function calculateWeek(){
   var month = parseInt(document.getElementById(month).value);
   var year = parseInt(document.getElementById(year).value);
   var gender = document.getElementsByName(gender)
-  var yy = parseInt(year/100);
-  var cc = parseInt(year%100);
+  var yy = parseInt(year%100);
+  var cc = parseInt(year/100);
 
   var dayofWeek =  ( ( (cc/4) -(2*cc)-1) + ((5*yy)/4) + ((26*(month+1)/10)) + day) % 7;
 if day (day === 0) {
