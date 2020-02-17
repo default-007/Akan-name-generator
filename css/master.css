@@ -9,16 +9,14 @@
   background-color: brown;
   color: White;
 }
-span {
-  color: orange;
-}
 
 h1 {
   font-size: 60px;
 }
-span, #akan {
+#akan {
   font-size: 60px;
   font-weight: bolder;
+  color: orange;
 }
 .par {
   color: black;
@@ -34,4 +32,8 @@ h4 {
 }
 ul {
   font-weight: bold;
+}
+span {
+  color: orange;
+  font-size: 30px;
 }

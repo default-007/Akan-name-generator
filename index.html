@@ -70,7 +70,7 @@
           <div class="form-group">
             <form class="form" onsubmit="getAkanName()">
               <label for="date" class="input-group">Date of Birth:</label>
-              <input type="date" class="form-control mb-2 mr-sm-2" placeholder="mm/dd/yyyy" id="myBirthDate" name="date" autocomplete="off" required>
+              <input type="date" class="form-control mb-2 mr-sm-2" placeholder="mm/dd/yyyy" id="myBirthDate" name="date" autocomplete="off">
           </div>
           <label class="label">Gender</label>
           <div class="rdio rdio-default">
@@ -83,7 +83,7 @@
           </div>
           <br>
           <br>
-          <button type="submit" class="btn btn-primary mb-2" onsubmit="getAkanName()">Submit</button>
+          <button type="button" class="btn btn-primary mb-2" onclick="getAkanName()">Submit</button>
           <div class="output">
             <p id="message"></p>
           </div>
@@ -96,10 +96,11 @@
     <div class="jumbotron text-center" style="margin-bottom:0">
       <p>Site created by default-007</p>
     </div>
-    <script src="js/jquery.maskedinput.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
   </body>
 
 </html>
