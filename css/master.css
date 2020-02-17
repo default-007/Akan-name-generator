@@ -37,3 +37,7 @@ span {
   color: orange;
   font-size: 30px;
 }
+.alert {
+  color: red;
+  font-size: 40px;
+}

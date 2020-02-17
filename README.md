@@ -1,6 +1,6 @@
 # Akan-name-generator
-Application that generates the Users Akan name depending on their Birthday
-#### {Brief description of application}, {17th Feb 2020}
+Application that generates the User's Akan name depending on their Birthday, by selecting the day they were born and cross-referencing with the Akan name list.
+#### {17th Feb 2020}
 
 ## Description
 This application helps user know their akan names by entering their birthdates in the text fields and calculates the day of the week they were born then assigns them with akan names according to their gender.
