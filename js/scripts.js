@@ -12,27 +12,25 @@ function getAkanName(){
     var dateOfBirth = new Date(myBirthday);
     var dayOfTheWeek = dateOfBirth.getDay();
     if(myBirthday === ""){
-        document.getElementById('message').innerHTML = "<div class=\"alert alert-danger\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">x</button><strong>Oh snap!</strong> You Didn't Submit a Valid Date!</div>";
-        $('#message').addClass("animated shake");
+        document.getElementById('message').innerHTML = " You Didn't Submit a Valid Date!";
+
     }
     else {
         for(var i=0;i<myGender.length;i++){
             if(myGender[i].checked){
                 if(myGender[i].value === "Male"){
-                    document.getElementById('message').innerHTML = "<span><i class=\"fa fa-male\"></i></span>&nbsp;&nbsp; Born on a <span>" + days[dayOfTheWeek] + "</span>, Your Akan Name's <span>" + maleAkanNames[dayOfTheWeek] + "</span>";
-                    $('#message span:first-child').addClass("animated fadeInDown");
-                    $('#message span:last-child').addClass("animated fadeInUp");
+                    document.getElementById('message').innerHTML = " Born on a <span>" + days[dayOfTheWeek] +, "Your Akan Name's " + maleAkanNames[dayOfTheWeek] + "";
+
                 }
                 else {
-                    document.getElementById('message').innerHTML = "<span><i class=\"fa fa-female\"></i></span>&nbsp;&nbsp; Born on a <span>" + days[dayOfTheWeek] + "</span>, Your Akan Name's <span>" + femaleAkanNames[dayOfTheWeek] + "</span>";
-                    $('#message span:first-child').addClass("animated fadeInDown");
-                    $('#message span:last-child').addClass("animated fadeInUp");
+                    document.getElementById('message').innerHTML = " Born on a <span>" + days[dayOfTheWeek] + "Your Akan Name's" + femaleAkanNames[dayOfTheWeek] + "";
+
                 }
                 break;
-            }    
+            }
             else {
-                document.getElementById('message').innerHTML = "<div class=\"alert alert-danger\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">x</button><strong>Oh snap!</strong> You Should Select a Gender Too Determine Your Akan Name!</div>";
-                $('#message').addClass("animated shake");
+                document.getElementById('message').innerHTML = "Please select a Gender";
+
             }
         }
     }
@@ -40,4 +38,5 @@ function getAkanName(){
 
 function clearAkanMessage(){
     document.getElementById('message').innerHTML = "";
+    return false;
 }
